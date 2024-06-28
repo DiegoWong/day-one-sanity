@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",
+    "debug": "sanity debug",
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
@@ -15,10 +16,15 @@
     "sanity"
   ],
   "dependencies": {
+    "@q42/sanity-plugin-page-tree": "^1.2.2",
+    "@sanity/dashboard": "^3.1.6",
+    "@sanity/hierarchical-document-list": "^2.0.0",
     "@sanity/vision": "^3.44.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.44.0",
+    "sanity": "^3.45.0",
+    "sanity-plugin-dashboard-widget-document-list": "^1.0.1",
+    "sanity-plugin-documents-pane": "^2.3.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
@@ -33,5 +39,10 @@
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
+  },
+  "overrides": {
+    "sanity-plugin-graph-view": {
+      "@sanity/ui": "2.2.0"
+    }
   }
 }
